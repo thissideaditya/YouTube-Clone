@@ -6,20 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        #ytLogo{
+            padding: 18px 14px 18px 16px;
+        }
+    </style>
 </head>
 <body>
-  <div class="navBar">
+  <div class="header">
     <div>
-        <nav>
+        <nav class="firstDiv">
             <img id="yticon" src="images/menu.png" alt="Menu">
-            <img src="images/ytLogo.png" alt="YT Logo" width="120px" height="56px">
+            <img id="ytLogo" src="images/ytLogo.png" alt="YT Logo" width="90px" height="20px">
         </nav>
     </div>
     <div>
-        <nav>
-            <input type="text" placeholder="Search" width="398px" height="40px">
-            <img id="yticon" src="images/searchBar.png" alt="searchBar">
-            <img id="yticon" src="images/voiceSearch.png" alt="voiceSearch">
+        <nav class="secDiv">
+            <input #search type="text" placeholder="Search" style="width: 566px; height: 34px;">
+            <img #searchItem src="images/searchBar.png" alt="searchBar" width="64px" height="40px" style="margin-top: 3px;">
+            <img #searchItem src="images/mic.png" alt="voiceSearch" width="40px" height="40px" style="margin-top: 3px;">
         </nav>
     </div>
     <div>
@@ -27,9 +32,55 @@
             <img id="yticon" src="images/goLive.png" alt="go live">
             <img id="yticon" src="images/ytOptions.png" alt="yt options">
             <img id="yticon" src="images/notifications.png" alt="notifications">
-            <img src="images/Aacclogo.png" alt="acc sign" width="32px" height="32px">
+            <img #acc src="images/Aacclogo.png" alt="acc sign" width="32px" height="32px">
         </nav>
     </div>
+  </div>
+  <hr color="#2f2f2f">
+  <div class="sideBar">
+      <nav>
+          <div>
+              <img src="images/home.png" alt="home">
+              <h2>Home</h2>
+          </div>
+          <div>
+            <img src="images/explore.png" alt="explore">
+            <h2>Explore</h2>
+          </div>
+          <div>
+            <img src="images/subs.png" alt="subs">
+            <h2>Subscriptions</h2>
+          </div>
+          <hr color="#2f2f2f">
+          <div>
+            <img src="images/home.png" alt="home">
+            <h2>Library</h2>
+          </div>
+          <div>
+            <img src="images/home.png" alt="home">
+            <h2>History</h2>
+          </div>
+          <div>
+            <img src="images/home.png" alt="home">
+            <h2>Your Videos</h2>
+          </div>
+          <div>
+            <img src="images/home.png" alt="home">
+            <h2>Watch Later</h2>
+          </div>
+          <div>
+            <img src="images/home.png" alt="home">
+            <h2>Liked Videos</h2>
+          </div>
+          <div>
+            <img src="images/home.png" alt="home">
+            <h2>Show More</h2>
+          </div>
+          <hr color="#2f2f2f">
+      </nav>
+  </div>
+  <div>
+
   </div>
 </body>
 </html>

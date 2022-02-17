@@ -1,8 +1,29 @@
-.navBar{
+html{
+    background-color: #202020;
+    color: white;
+}
+.header{
+    width: 1408px;
+    padding: 0px 16px 0px 16px;
+    height: 56px;
     display: flex;
     justify-content: space-between;
 }
 #yticon{
 width: 24px;
 height: 24px;
+margin: 12px;
+}
+div>nav>div{
+    display: flex;
+}
+div>img{
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+}
+h2{
+    width: 144px;
+    height: 20px;
+    margin: 0px;
 }
