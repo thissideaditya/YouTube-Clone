@@ -13,6 +13,12 @@ h2{
     height: 20px;
     margin: 0px
 }
+h3{
+    font-size: 14px;
+}
+p{
+    font-size: 11px;
+}
 .header{
     width: 1408px;
     padding: 0px 16px 0px 12px;
@@ -73,6 +79,7 @@ div>img{
 }
 .videoReccom{
     background-color: #181818;
+    flex-wrap: wrap;
 }
 .subs{
     display: grid
@@ -80,8 +87,24 @@ div>img{
 .subs>div>img{
     border-radius: 50%;
 }
+#channelLogo{
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+}
+#vidImage{
+    width: 276px;
+    height: 155px;
+}
 .subs>div{
     width: 240px;
     height: 40px;
+    display: flex;
+}
+.vidDetails{
+    width: 276px;
+    height: 112px;
+}
+.vidName{
     display: flex;
 }
