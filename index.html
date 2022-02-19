@@ -6,339 +6,343 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        #ytLogo{
-            padding: 18px 14px 18px 6px;
-        }
-    </style>
 </head>
 <body>
   <div class="header">
     <div>
         <nav class="firstDiv">
-            <img id="yticon" src="images/menu.png" alt="Menu">
-            <img id="ytLogo" src="images/ytLogo.png" alt="YT Logo" width="110px" height="30px">
+            
+            <div class="ytlogo1">
+              <img id="yticon" src="images/menu.png" alt="Menu">
+              <img id="ytLogo" src="images/ytLogo.png" alt="YT Logo">
+            </div>
         </nav>
     </div>
     <div>
         <nav class="secDiv">
-            <input #search type="text" placeholder="Search" style="width: 566px; height: 34px;">
+            <input #search type="text" placeholder="Search" style="width: 566px; height: 40px;">
             <img #searchItem src="images/searchBar.png" alt="searchBar" width="64px" height="40px" style="margin-top: 3px;">
             <img #searchItem src="images/mic.png" alt="voiceSearch" width="40px" height="40px" style="margin-top: 3px;">
         </nav>
     </div>
     <div>
-        <nav>
+        <nav class="extra">
             <img id="yticon" src="images/goLive.png" alt="go live">
             <img id="yticon" src="images/ytOptions.png" alt="yt options">
             <img id="yticon" src="images/notifications.png" alt="notifications">
-            <img #acc src="images/Aacclogo.png" alt="acc sign" width="32px" height="32px">
+            <img id="acc" src="images/Aacclogo.png" alt="acc sign" width="32px" height="32px">
         </nav>
     </div>
   </div>
   <!-- header ends -->
   <hr color="#2f2f2f">
-  <div class="sideBar">
+  <div class="side--tab-rec">
+
+    <div class="sideBar">
       <nav>
-          <div>
-              <img src="images/home.png" alt="home">
-              <h2>Home</h2>
+        <div>
+          <img src="images/home.png" alt="home">
+          <h2>Home</h2>
+        </div>
+        <div>
+          <img src="images/explore.png" alt="explore">
+          <h2>Explore</h2>
+        </div>
+        <div>
+          <img src="images/subs.png" alt="subs">
+          <h2>Subscriptions</h2>
+        </div>
+        <hr color="#2f2f2f">
+        <div>
+          <img src="images/library.png" alt="library">
+          <h2>Library</h2>
+        </div>
+        <div>
+          <img src="images/history.png" alt="history">
+          <h2>History</h2>
+        </div>
+        <div>
+          <img src="images/yourVideos.png" alt="Your Videos">
+          <h2>Your Videos</h2>
+        </div>
+        <div>
+          <img src="images/watchLater.png" alt="Watch Later">
+          <h2>Watch Later</h2>
+        </div>
+        <div>
+          <img src="images/likedVideos.png" alt="Liked Videos">
+          <h2>Liked Videos</h2>
+        </div>
+        <div>
+          <img src="images/showMore.png" alt="Show More">
+          <h2>Show More</h2>
+        </div>
+        <hr color="#2f2f2f">
+        <div class="subsMain">
+          <h1>Subscriptions</h1>
+          <div class="subs">
+            <div>
+              <img src="images/channelImg.jpg" alt="Channel Image">
+              <h2>Aditya Chaurasia</h2>
+            </div>
+            <div>
+              <img src="images/channelImg.jpg" alt="Channel Image">
+              <h2>Aditya Chaurasia</h2>
+            </div>
+            <div>
+              <img src="images/channelImg.jpg" alt="Channel Image">
+              <h2>Aditya Chaurasia</h2>
+            </div> 
+            <div> 
+              <img src="images/channelImg.jpg" alt="Channel Image">
+              <h2>Aditya Chaurasia</h2>
+            </div> 
+            <div>
+              <img src="images/channelImg.jpg" alt="Channel Image">
+              <h2>Aditya Chaurasia</h2>
+            </div>
+            <div>
+              <img src="images/channelImg.jpg" alt="Channel Image">
+              <h2>Aditya Chaurasia</h2>
+            </div>
+            <div>
+              <img src="images/showMore.png" alt="Show More">
+              <h2>Show More</h2>
+            </div>  
           </div>
-          <div>
-            <img src="images/explore.png" alt="explore">
-            <h2>Explore</h2>
-          </div>
-          <div>
-            <img src="images/subs.png" alt="subs">
-            <h2>Subscriptions</h2>
-          </div>
-          <hr color="#2f2f2f">
-          <div>
-            <img src="images/library.png" alt="library">
-            <h2>Library</h2>
-          </div>
-          <div>
-            <img src="images/history.png" alt="history">
-            <h2>History</h2>
-          </div>
-          <div>
-            <img src="images/yourVideos.png" alt="Your Videos">
-            <h2>Your Videos</h2>
-          </div>
-          <div>
-            <img src="images/watchLater.png" alt="Watch Later">
-            <h2>Watch Later</h2>
-          </div>
-          <div>
-            <img src="images/likedVideos.png" alt="Liked Videos">
-            <h2>Liked Videos</h2>
-          </div>
-          <div>
-            <img src="images/showMore.png" alt="Show More">
-            <h2>Show More</h2>
-          </div>
-          <hr color="#2f2f2f">
-          <div>
-            <h1>Subscriptions</h1>
-            <div class="subs">
-              <div>
-               <img src="images/channelImg.jpg" alt="Channel Image">
-               <h2>Aditya Chaurasia</h2>
-              </div>
-              <div>
-               <img src="images/channelImg.jpg" alt="Channel Image">
-               <h2>Aditya Chaurasia</h2>
-              </div>
-              <div>
-               <img src="images/channelImg.jpg" alt="Channel Image">
-               <h2>Aditya Chaurasia</h2>
-              </div> 
-               <div> 
-               <img src="images/channelImg.jpg" alt="Channel Image">
-               <h2>Aditya Chaurasia</h2>
-               </div> 
-              <div>
-               <img src="images/channelImg.jpg" alt="Channel Image">
-               <h2>Aditya Chaurasia</h2>
-              </div>
-              <div>
-               <img src="images/channelImg.jpg" alt="Channel Image">
-               <h2>Aditya Chaurasia</h2>
-              </div>
-              <div>
-               <img src="images/showMore.png" alt="Show More">
-               <h2>Show More</h2>
-              </div>  
+        </div>
+      </nav>
+    </div>
+    <!-- sidebar ends -->
+    <div class="tab-rec">
+      <div class="tabList">
+        <ul>
+          <li>All</li>
+          <li>The Great Aditya Show</li>
+          <li>Shows</li>
+          <li>Travel</li>
+          <li>Coding</li>
+          <li>Education</li>
+          <li>Music</li>
+          <li>Mountains</li>
+          <li>Beaches</li>
+          <li>Stock Markets</li>
+        </ul>
+      </div>
+      <hr color="#2f2f2f">
+      <!-- tabList ends -->
+      <div class="videoReccom">
+        <div>
+          <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
+          <div class="vidDetails">
+            <div class="vidName">
+              <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
+              <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+            </div>
+            <div class="chnDtl">
+              <p>Aditya Chaurasia</p>
+              <p>1.4T | 12 hours ago</p>
             </div>
           </div>
-      </nav>
-  </div>
-  <!-- sidebar ends -->
-  <div class="tabList">
-    <ul>
-      <li>All</li>
-      <li>The Great Aditya Show</li>
-      <li>Shows</li>
-      <li>Travel</li>
-      <li>Coding</li>
-      <li>Education</li>
-      <li>Music</li>
-      <li>Mountains</li>
-      <li>Beaches</li>
-      <li>Stock Markets</li>
-    </ul>
-  </div>
-  <hr color="#2f2f2f">
-  <!-- tabList ends -->
-  <div class="videoReccom">
-    <div>
-      <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
-      <div class="vidDetails">
-        <div class="vidName">
-         <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
-         <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
         </div>
-         <div class="chnDtl">
-           <p>Aditya Chaurasia</p>
-           <p>1.4T | 12 hours ago</p>
-         </div>
-      </div>
-    </div>
-    <div>
-      <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
-      <div class="vidDetails">
-        <div class="vidName">
-         <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
-         <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+        <div>
+          <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
+          <div class="vidDetails">
+            <div class="vidName">
+              <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
+              <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+            </div>
+            <div class="chnDtl">
+              <p>Aditya Chaurasia</p>
+              <p>1.4T | 12 hours ago</p>
+            </div>
+          </div>
         </div>
-         <div class="chnDtl">
-           <p>Aditya Chaurasia</p>
-           <p>1.4T | 12 hours ago</p>
-         </div>
-      </div>
-    </div>
-    <div>
-      <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
-      <div class="vidDetails">
-        <div class="vidName">
-         <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
-         <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+        <div>
+          <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
+          <div class="vidDetails">
+            <div class="vidName">
+              <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
+              <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+            </div>
+            <div class="chnDtl">
+              <p>Aditya Chaurasia</p>
+              <p>1.4T | 12 hours ago</p>
+            </div>
+          </div>
         </div>
-         <div class="chnDtl">
-           <p>Aditya Chaurasia</p>
-           <p>1.4T | 12 hours ago</p>
-         </div>
-      </div>
-    </div>
-    <div>
-      <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
-      <div class="vidDetails">
-        <div class="vidName">
-         <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
-         <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+        <div>
+          <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
+          <div class="vidDetails">
+            <div class="vidName">
+              <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
+              <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+            </div>
+            <div class="chnDtl">
+              <p>Aditya Chaurasia</p>
+              <p>1.4T | 12 hours ago</p>
+            </div>
+          </div>
         </div>
-         <div class="chnDtl">
-           <p>Aditya Chaurasia</p>
-           <p>1.4T | 12 hours ago</p>
-         </div>
-      </div>
-    </div>
-    <div>
-      <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
-      <div class="vidDetails">
-        <div class="vidName">
-         <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
-         <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+        <div>
+          <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
+          <div class="vidDetails">
+            <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
+            <div class="vidDtl">
+              <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+              <div class="chnDtl">
+                <p>Aditya Chaurasia</p>
+                <p>1.4T | 12 hours ago</p>
+              </div>
+            </div>
+            
+          </div>
         </div>
-         <div class="chnDtl">
-           <p>Aditya Chaurasia</p>
-           <p>1.4T | 12 hours ago</p>
-         </div>
-      </div>
-    </div>
-    <div>
-      <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
-      <div class="vidDetails">
-        <div class="vidName">
-         <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
-         <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+        <div>
+          <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
+          <div class="vidDetails">
+            <div class="vidName">
+              <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
+              <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+            </div>
+            <div class="chnDtl">
+              <p>Aditya Chaurasia</p>
+              <p>1.4T | 12 hours ago</p>
+            </div>
+          </div>
         </div>
-         <div class="chnDtl">
-           <p>Aditya Chaurasia</p>
-           <p>1.4T | 12 hours ago</p>
-         </div>
-      </div>
-    </div>
-    <div>
-      <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
-      <div class="vidDetails">
-        <div class="vidName">
-         <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
-         <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+        <div>
+          <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
+          <div class="vidDetails">
+            <div class="vidName">
+              <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
+              <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+            </div>
+            <div class="chnDtl">
+              <p>Aditya Chaurasia</p>
+              <p>1.4T | 12 hours ago</p>
+            </div>
+          </div>
         </div>
-         <div class="chnDtl">
-           <p>Aditya Chaurasia</p>
-           <p>1.4T | 12 hours ago</p>
-         </div>
-      </div>
-    </div>
-    <div>
-      <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
-      <div class="vidDetails">
-        <div class="vidName">
-         <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
-         <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+        <div>
+          <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
+          <div class="vidDetails">
+            <div class="vidName">
+              <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
+              <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+            </div>
+            <div class="chnDtl">
+              <p>Aditya Chaurasia</p>
+              <p>1.4T | 12 hours ago</p>
+            </div>
+          </div>
         </div>
-         <div class="chnDtl">
-           <p>Aditya Chaurasia</p>
-           <p>1.4T | 12 hours ago</p>
-         </div>
-      </div>
-    </div>
-    <div>
-      <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
-      <div class="vidDetails">
-        <div class="vidName">
-         <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
-         <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+        <div>
+          <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
+          <div class="vidDetails">
+            <div class="vidName">
+              <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
+              <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+            </div>
+            <div class="chnDtl">
+              <p>Aditya Chaurasia</p>
+              <p>1.4T | 12 hours ago</p>
+            </div>
+          </div>
         </div>
-         <div class="chnDtl">
-           <p>Aditya Chaurasia</p>
-           <p>1.4T | 12 hours ago</p>
-         </div>
-      </div>
-    </div>
-    <div>
-      <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
-      <div class="vidDetails">
-        <div class="vidName">
-         <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
-         <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+        <div>
+          <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
+          <div class="vidDetails">
+            <div class="vidName">
+              <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
+              <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+            </div>
+            <div class="chnDtl">
+              <p>Aditya Chaurasia</p>
+              <p>1.4T | 12 hours ago</p>
+            </div>
+          </div>
         </div>
-         <div class="chnDtl">
-           <p>Aditya Chaurasia</p>
-           <p>1.4T | 12 hours ago</p>
-         </div>
-      </div>
-    </div>
-    <div>
-      <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
-      <div class="vidDetails">
-        <div class="vidName">
-         <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
-         <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+        <div>
+          <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
+          <div class="vidDetails">
+            <div class="vidName">
+              <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
+              <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+            </div>
+            <div class="chnDtl">
+              <p>Aditya Chaurasia</p>
+              <p>1.4T | 12 hours ago</p>
+            </div>
+          </div>
         </div>
-         <div class="chnDtl">
-           <p>Aditya Chaurasia</p>
-           <p>1.4T | 12 hours ago</p>
-         </div>
-      </div>
-    </div>
-    <div>
-      <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
-      <div class="vidDetails">
-        <div class="vidName">
-         <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
-         <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+        <div>
+          <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
+          <div class="vidDetails">
+            <div class="vidName">
+              <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
+              <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+            </div>
+            <div class="chnDtl">
+              <p>Aditya Chaurasia</p>
+              <p>1.4T | 12 hours ago</p>
+            </div>
+          </div>
         </div>
-         <div class="chnDtl">
-           <p>Aditya Chaurasia</p>
-           <p>1.4T | 12 hours ago</p>
-         </div>
-      </div>
-    </div>
-    <div>
-      <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
-      <div class="vidDetails">
-        <div class="vidName">
-         <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
-         <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+        <div>
+          <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
+          <div class="vidDetails">
+            <div class="vidName">
+              <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
+              <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+            </div>
+            <div class="chnDtl">
+              <p>Aditya Chaurasia</p>
+              <p>1.4T | 12 hours ago</p>
+            </div>
+          </div>
         </div>
-         <div class="chnDtl">
-           <p>Aditya Chaurasia</p>
-           <p>1.4T | 12 hours ago</p>
-         </div>
-      </div>
-    </div>
-    <div>
-      <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
-      <div class="vidDetails">
-        <div class="vidName">
-         <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
-         <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+        <div>
+          <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
+          <div class="vidDetails">
+            <div class="vidName">
+              <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
+              <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+            </div>
+            <div class="chnDtl">
+              <p>Aditya Chaurasia</p>
+              <p>1.4T | 12 hours ago</p>
+            </div>
+          </div>
         </div>
-         <div class="chnDtl">
-           <p>Aditya Chaurasia</p>
-           <p>1.4T | 12 hours ago</p>
-         </div>
-      </div>
-    </div>
-    <div>
-      <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
-      <div class="vidDetails">
-        <div class="vidName">
-         <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
-         <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+        <div>
+          <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
+          <div class="vidDetails">
+            <div class="vidName">
+              <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
+              <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+            </div>
+            <div class="chnDtl">
+              <p>Aditya Chaurasia</p>
+              <p>1.4T | 12 hours ago</p>
+            </div>
+          </div>
         </div>
-         <div class="chnDtl">
-           <p>Aditya Chaurasia</p>
-           <p>1.4T | 12 hours ago</p>
-         </div>
-      </div>
-    </div>
-    <div>
-      <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
-      <div class="vidDetails">
-        <div class="vidName">
-         <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
-         <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+        <div>
+          <img id="vidImage" src="images/channelImg.jpg" alt="vidImage">
+          <div class="vidDetails">
+            <div class="vidName">
+              <img id="channelLogo" src="images/channelImg.jpg" alt="channel">
+              <h3>Beautiful Beaches in Goa | Goa Vlog | Aditya Chaurasia</h3>
+            </div>
+            <div class="chnDtl">
+              <p>Aditya Chaurasia</p>
+              <p>1.4T | 12 hours ago</p>
+            </div>
+          </div>
         </div>
-         <div class="chnDtl">
-           <p>Aditya Chaurasia</p>
-           <p>1.4T | 12 hours ago</p>
-         </div>
       </div>
-    </div>
-  </div>
-</body>
-</html>
+    </div> <!-- common parent of tablist and videoreccom -->
+  </div><!-- common parent of sidebar and tab-rec -->
+  </body>
+  </html>
