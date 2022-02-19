@@ -12,8 +12,9 @@ h1{
     font-weight: 700;
 }
 h2{
+    color: #dbdbdb;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
     width: 144px;
     height: 20px;
     margin: 0px
@@ -118,6 +119,8 @@ div>img{
 .videoReccom{
     background-color: #181818;
     flex-wrap: wrap;
+    padding-top: 16px;
+    padding-left: 16px;
 }
 .subs{
     display: grid
@@ -139,6 +142,9 @@ div>img{
     height: 40px;
     display: flex;
 }
+.ytlogo1>img{
+    margin-right: 0px;
+}
 .vidDetails{
     width: 276px;
     height: 112px;
@@ -150,4 +156,5 @@ div>img{
 }
 .subsMain{
     display: grid;
+    gap: 10px;
 }
